@@ -1,0 +1,129 @@
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.Con {
+    text-align: center;
+    font-size: 2em;
+}
+
+li {
+    list-style: none;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: orangered;
+}
+
+header {
+    padding: 0 2rem;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    max-width: 100%;
+}
+
+.Menu {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Menu .Titulo {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Menu .Enlaces {
+    display: flex;
+    gap: 2rem;
+}
+
+.Contenedor-Imagenes > img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px, 0px, 30px, #000;
+    transition: all .5s ease;
+}
+
+.Contenedor-Imagenes img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Contenedor-Imagenes {
+    display: grid;
+    margin-top: 2%;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    gap: 10px;
+}
+
+.Contenedor-Alerta {
+    border-radius: 5%;
+}
+
+.Texto-Rojo {
+    color: red;
+}
+
+.Boton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 14px 32px;
+    text-align: center;
+    font-size: 14px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.Boton {
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.Boton:hover {
+    color: black;
+    background-color: white;
+    border-radius: 14px;
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        max-width: 70%;
+    }
+
+    .Menu {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .Menu .Enlaces {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+}
