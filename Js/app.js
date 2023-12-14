@@ -16,3 +16,18 @@ function Agregar() {
         },
     })
 }
+
+function TemaOscuro() {
+    document.querySelector("html").setAttribute("data-bs-theme", "dark");
+    document.querySelector("#icon").setAttribute("class", "bi bi-sun-fill");
+}
+
+function TemaClaro() {
+    document.querySelector("html").setAttribute("data-bs-theme", "light");
+    document.querySelector("#icon").setAttribute("class", "bi bi-moon-fill");
+}
+
+function CambiarTema() {
+    document.querySelector("html").getAttribute("data-bs-theme") === "light" ?
+        TemaOscuro() : TemaClaro();
+}

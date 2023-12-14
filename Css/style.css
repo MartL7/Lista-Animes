@@ -1,8 +1,11 @@
 body {
-    background-color: #000;
-    color: #FFF;
+
     font-family: 'Roboto', sans-serif;
     
+}
+
+h2 {
+    font-weight: 700;
 }
 
 .Con {
@@ -17,12 +20,17 @@ li {
 
 a {
     text-decoration: none;
-    color: #FFF;
     font-size: 1rem;
 }
 
 a:hover {
     color: orangered;
+}
+
+.XD {
+    display: flex;
+    margin-left: -12%;
+    gap: 20rem;
 }
 
 header {
@@ -45,7 +53,6 @@ header {
 }
 
 .Menu .Titulo {
-    color: #FFF;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -114,16 +121,22 @@ header {
 
 @media only screen and (max-width: 400px) {
     header {
-        max-width: 70%;
+        max-width: 100%;
     }
 
     .Menu {
-        width: 50%;
         flex-direction: column;
     }
 
+    .XD {
+        gap: 1.5rem;
+    }
+
     .Menu .Enlaces {
-        margin-top: 1rem;
         gap: 1rem;
+    }
+
+    .Contenedor-Imagenes img:hover {
+        transform: initial;
     }
 }
